@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+RewriteRule ^a_([a-zA-Z0-9]{1,})$ album.php?shorturl=$1 
+RewriteRule ^p_([a-zA-Z0-9]{1,})$ photo.php?shorturl=$1 
+RewriteRule ^([a-zA-Z0-9]{1,})$ profile.php?screen_name=$1 [L]

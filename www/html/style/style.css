@@ -1,0 +1,273 @@
+body{ margin:0 padding:0;background-color:#d5e6f1;font-family:Arial, Helvetica, sans-serif;}
+a{text-decoration:none;color:#0066CC;}
+a:hover{text-decoration:underline;cursor:pointer;}
+a img{border:0;}
+textarea{resize:none;}
+#header,#wrapper,#footer{width:980px;margin:0 auto;position:relative;overflow:hidden;}
+#header{background-color:transparent;height:87px;}
+#nav-auth{margin-top:15px;background-color:white;-moz-border-radius:5px;border-radius:5px;-webkit-border-radius:5px;width: 520px;height: 53px;float:right;position:relative;overflow:hidden;}
+#nav-upload{float:left;width:216px;position:relative;overflow:hidden;}
+#nav-user{padding:8px;float:right;width:280px;position:relative;overflow:hidden;}
+#nav-user-avatar{float:left;width:38px;height:38px;position:relative;overflow:hidden;}
+#nav-links{float:right;width:230px;position:relative;overflow:hidden;}
+#nav-links h1{font-weight:bold;color:#333;font-size:18px; margin:0;}
+#nav-links a{font-size:12px;}
+a.nav-link{font-size:14px;font-weight:bold;color:#3198D3;text-decoration:none;}
+#nav-login{position:relative;overflow:hidden;float:right;line-height:87px;}
+a.button:hover{border:1px solid #2E63A5;color:white;text-decoration:none;text-shadow:0 -1px 0 #2E63A5;background:#3abeee;background:-webkit-gradient(linear,center bottom,center top,from(#3198D3),to(#5E9AE2));background: -moz-linear-gradient(90deg,#3198D3,#5E9AE2);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#3570B8',endColorstr='#5E9AE2');}
+a.button, .button:visited{border:1px solid #D4D4D4;color:#666;display:block;float:left;margin-right:10px;font-size:15px;font-weight: bold;line-height:15px;margin-bottom:10px;padding:10px 15px 10px 16px;text-shadow:1px 1px 0 rgba(255, 255, 255, 0.7);border-radius:5px;background:#ECECEC;background:-webkit-gradient(linear,center bottom,center top,from(#ECECEC),to(#F4F4F4));background:-moz-linear-gradient(90deg,#ECECEC,#F4F4F4);-moz-border-radius:5px;-moz-box-shadow: 0 1px 0 #ECECEC;-webkit-box-shadow: 0 1px 0 #ECECEC;filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F4F4F4',endColorstr='#ECECEC');}
+#wrapper{background-color:white;-moz-border-radius:5px;border-radius:5px;-webkit-border-radius:5px;}
+#wrapper div.content{margin:10px;}
+#footer div.main,#footer div.c{margin:10px 0; font-size:10px; font-weight:normal;}
+#footer div.c{float:left;}
+#footer div.main{float:right;}
+
+/* Upload CSS */
+
+/* remember to define focus styles! */
+:focus { outline: 0; }
+
+ol, ul { 
+	list-style: none; 
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after { 
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+
+/* ----------------------------------------------- 
+	BASIC ELEMENTS
+   ----------------------------------------------- */
+   
+   
+/* -- Text Styles ------------------------------- */
+
+strong { font-weight: 700; }
+
+
+
+
+p { 
+	margin-top: .25em;
+	margin-bottom: .5em;
+}
+
+ul { padding: 4px 5px; }
+ul li { 
+	padding: 4px 5px; 
+	margin: 0 20px;
+	list-style:square; 
+}
+
+code {
+	display: block;
+	background:#edffb8 none repeat scroll 0%;
+	border-color:#b2da3a;
+	border-style:solid;
+	border-width:1px 0;
+	font-size: 1em;
+	margin: 1em 0pt;
+	overflow:auto;
+	padding: 0.3em 0.4em;
+	white-space:pre;
+}
+
+/* -- Layout ------------------------------- */
+
+
+
+#content { width: 680px;}
+#content { margin: 20px 90px; }
+
+
+
+
+/* -- Form Styles ------------------------------- */
+form {	
+	margin: 0;
+	padding: 0;
+}
+
+
+
+div.fieldset {
+	border:  1px solid #afe14c;
+	margin: 10px 0;
+	padding: 20px 10px;
+}
+div.fieldset span.legend {
+	position: relative;
+	background-color: #FFF;
+	padding: 3px;
+	top: -30px;
+	font: 700 14px Arial, Helvetica, sans-serif;
+	color: #73b304;
+}
+
+div.flash {
+	width: 650px;
+	margin: 10px 5px;
+	border-color: #D9E4FF;
+
+	-moz-border-radius-topleft : 5px;
+	-webkit-border-top-left-radius : 5px;
+    -moz-border-radius-topright : 5px;
+    -webkit-border-top-right-radius : 5px;
+    -moz-border-radius-bottomleft : 5px;
+    -webkit-border-bottom-left-radius : 5px;
+    -moz-border-radius-bottomright : 5px;
+    -webkit-border-bottom-right-radius : 5px;
+
+}
+
+button,
+input,
+select,
+textarea { 
+	border-width: 1px; 
+	margin-bottom: 10px;
+	padding: 2px 3px;
+}
+
+
+
+input[disabled]{ border: 1px solid #ccc } /* FF 2 Fix */
+
+
+label { 
+	width: 150px; 
+	text-align: right; 
+	display:block;
+	margin-right: 5px;
+}
+
+#btnSubmit { margin: 0 0 0 155px ; }
+
+/* -- Table Styles ------------------------------- */
+td {
+	font: 10pt Helvetica, Arial, sans-serif;
+	vertical-align: top;
+}
+
+.progressWrapper {
+	width: 650px;
+	overflow: hidden;
+}
+
+.progressContainer {
+	margin: 5px;
+	padding: 4px;
+	border: solid 1px #E8E8E8;
+	background-color: #F7F7F7;
+	overflow: hidden;
+}
+/* Message */
+.message {
+	margin: 1em 0;
+	padding: 10px 20px;
+	border: solid 1px #FFDD99;
+	background-color: #FFFFCC;
+	overflow: hidden;
+}
+/* Error */
+.red {
+	border: solid 1px #B50000;
+	background-color: #FFEBEB;
+}
+
+/* Current */
+.green {
+	border: solid 1px #DDF0DD;
+	background-color: #EBFFEB;
+}
+
+/* Complete */
+.blue {
+	border: solid 1px #CEE2F2;
+	background-color: #F0F5FF;
+}
+
+.progressName {
+	font-size: 8pt;
+	font-weight: 700;
+	color: #555;
+	width: 323px;
+	height: 14px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.progressBarInProgress,
+.progressBarComplete,
+.progressBarError {
+	font-size: 0;
+	width: 0%;
+	height: 2px;
+	background-color: blue;
+	margin-top: 2px;
+}
+
+.progressBarComplete {
+	width: 100%;
+	background-color: green;
+	visibility: hidden;
+}
+
+.progressBarError {
+	width: 100%;
+	background-color: red;
+	visibility: hidden;
+}
+
+.progressBarStatus {
+	margin-top: 2px;
+	width: 337px;
+	font-size: 7pt;
+	font-family: Arial;
+	text-align: left;
+	white-space: nowrap;
+}
+
+a.progressCancel {
+	font-size: 0;
+	display: block;
+	height: 14px;
+	width: 14px;
+	background-image: url(../images/cancelbutton.gif);
+	background-repeat: no-repeat;
+	background-position: -14px 0px;
+	float: right;}
+a.progressCancel:hover{background-position: 0px 0px;}
+.swfupload{vertical-align:top;}
+input[type="text"],textarea{border:1px solid #CCC;color:#333333;}
+img.photo_preview{ max-width:680px; max-height:700px;}
+div.album_preview{position:relative;overflow:hidden; margin-bottom:10px;}
+div.album_preview div.container{ position:relative; overflow:hidden; float:left; width:150px; border:1px solid #CCC; height:150px; margin:10px;}
+div.album_preview div.container div.title{font-size:10px;font-weight:bold;margin:0;padding:0; text-align:center; position:absolute; top:0; left:0; width:150px; background:#000000; color:#FFFFFF; padding:2px 0;}
+div.album_preview div.container img{width:150px;height:150px;}
+#page_right{position:relative;overflow:hidden;width:260px;float:right;margin:0;padding:0;}
+#page_right div.profile{border-bottom:1px solid #CCC;position:relative;overflow:hidden; padding-bottom:10px;}
+#page_right div.profile div.photo{float:left;position:relative;overflow:hidden;}
+#page_right div.profile div.desc{float:left;position:relative;overflow:hidden;margin-left:10px;}
+#page_right div.profile div.desc h1{font-size:12px; margin:5px 0 5px 0; padding:0;}
+div.adsense{text-align:center; margin-top:10px;}
+#page_left{position:relative;overflow:hidden;width:700px;float:left;margin:0;padding:0;}
+
+a.ibuton{background-color: #3198D3;display:block;text-align:center;text-decoration:none;font-size:24px;background-image:-moz-linear-gradient(top, #3198D3, #1578AF);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0, #3198D3),color-stop(1, #1578AF));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3198D3', EndColorStr='#1578AF');-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#3198D3', EndColorStr='#1578AF')";border:1px #1578AF solid;padding:18px 0px 18px 0px;width:100%;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-box-shadow: inset 0 0 1px #FFFFFF;-webkit-box-shadow: inset 0 0 2px #FFFFFF;box-shadow:inset 0 0 1px #FFFFFF;font-family:arial, sans-serif;color:white;cursor:pointer;}
+div.icontainer{background-color:#EFEFEF;padding:8px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;margin-bottom:30px;position:relative;overflow:hidden;}
+div.icontainer h1{margin:0;padding:0;font-size:16px;text-align:center;font-style:italic;}
+div.icontainer a:hover{text-decoration:none;}
